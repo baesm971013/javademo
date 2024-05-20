@@ -15,4 +15,5 @@ public class MemberApp {
         System.out.println(findMember);
         System.out.println(member);
     }
+
 }
