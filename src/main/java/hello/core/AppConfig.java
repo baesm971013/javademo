@@ -14,8 +14,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
-
-
     // 구성영역의 코드만 변경하면 된당
     @Bean
     public MemberService memberService(){

@@ -9,12 +9,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class OrderApp {
     public static void main(String[] args) {
-//        MemberService memberService = new MemberServiceImpl(new MemoryMemberRepository());
-//        OrderService orderService = new OrderServiceImpl(new M);
-//        AppConfig appConfig = new AppConfig();
-//        MemberService memberService = appConfig.memberService();
-//        OrderService orderService = appConfig.orderService();
-        //spring 버전으로 변환
+
+        //spring 버전으로 변환 // spring 컨테이너 생성
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
         OrderService orderService = applicationContext.getBean("orderService", OrderService.class);
