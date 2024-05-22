@@ -7,6 +7,7 @@ import hello.core.member.MemberRepository;
 import hello.core.member.MemoryMemberRepository;
 import hello.core.member.Member;
 
+//client code
 public class OrderServiceImpl implements OrderService{
     // 이걸 내가 직접 바꾸는게 문제 가 있음 추상화를 해야하는 것이
     // 관심사를 분리를 해야한다
